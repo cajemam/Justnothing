@@ -43,7 +43,7 @@ jobs:
           ln -s /home/runner/work/Justnothing/Justnothing/dist dist
           cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/Justnothing/Justnothing/dist ..
           make -j32
-          git init
+          cd /home/runner/work/Justnothing/Justnothing
           git add .
           git config --global user.name "Mona Lisa"
           git config --global user.email "MonaLisaCompiled@compile.ru"

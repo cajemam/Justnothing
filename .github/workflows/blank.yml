@@ -41,7 +41,7 @@ jobs:
           ln -s /home/runner/work/Justnothing/Justnothing/build build
           mkdir /home/runner/work/Justnothing/Justnothing/dist
           ln -s /home/runner/work/Justnothing/Justnothing/dist dist
-          cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/Justnothing/Justnothing/dist ..
+          cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/try/dist /try
           make -j32
           cd /home/runner/work/Justnothing/Justnothing
           git add .

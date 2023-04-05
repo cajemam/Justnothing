@@ -1,0 +1,13 @@
+# Target labels
+ ntl_fetched
+# Source files and their labels
+/try/HElib/build/dependencies/ntl/CMakeFiles/ntl_fetched
+/try/HElib/build/dependencies/ntl/CMakeFiles/ntl_fetched.rule
+/try/HElib/build/dependencies/ntl/CMakeFiles/ntl_fetched-complete.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-install.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-mkdir.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-download.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-update.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-patch.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-configure.rule
+/try/HElib/build/dependencies/Stamp/ntl_fetched/ntl_fetched-build.rule

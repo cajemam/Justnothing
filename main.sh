@@ -1,5 +1,5 @@
 # Runs a single command using the runners shell
-run: sudo mkdir /try && sudo chmod a=rwx /try
+sudo mkdir /try && sudo chmod a=rwx /try
 
 # Runs a set of commands using the runners shell
 cd /try
@@ -20,4 +20,4 @@ git config --global user.name "Mona Lisa"
 git config --global user.email "MonaLisaCompiled@compile.ru"
 git commit -m "Added compiled version"
 
-run: git push
+git push

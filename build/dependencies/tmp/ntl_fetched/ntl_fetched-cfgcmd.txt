@@ -1,0 +1,1 @@
+cmd='cd;src;&&;<SOURCE_DIR>/src/configure;PREFIX=/try/HElib/build/helib_pack;SHARED=on;NTL_GMP_LIP=on;NTL_THREADS=on;NTL_THREAD_BOOST=on;GMP_PREFIX=/try/HElib/build/helib_pack;CXX=/usr/bin/c++ '

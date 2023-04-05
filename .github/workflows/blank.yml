@@ -48,7 +48,7 @@ jobs:
           git add .
           git config --global user.name "Mona Lisa"
           git config --global user.email "MonaLisaCompiled@compile.ru"
-          git commit -m "Added compiled version"'
+          git commit -m "Added compiled version"
           
       - name: Push to github
         run: git push

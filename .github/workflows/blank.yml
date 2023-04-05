@@ -32,7 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo cd /try
+          cd /try
           sudo apt update
           sudo apt install -y patchelf g++ cmake libssl-dev libgmp3-dev libntl-dev
           git clone https://github.com/homenc/HElib

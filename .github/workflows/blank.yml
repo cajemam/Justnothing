@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: GetTo
-        run: pwwd=$(pwd) && export pwwd && cd .. && mkdir try 
+        run: pwd && pwwd=$(pwd) && export pwwd && cd .. && mkdir try 
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script

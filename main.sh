@@ -8,12 +8,12 @@ sudo apt install -y patchelf g++ cmake libssl-dev libgmp3-dev libntl-dev
 git clone https://github.com/homenc/HElib
 cd HElib
 mkdir /workspaces/Justnothing/build
-ln -s /workspaces/Justnothing/build build
+#ln -s /workspaces/Justnothing/build build
 mkdir /workspaces/Justnothing/dist
-ln -s /workspaces/Justnothing/dist dist
+#ln -s /workspaces/Justnothing/dist dist
 cd build
-cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/try/dist /try/HElib
-make -j32
+#cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/try/dist /try/HElib
+make -j16
 cd /workspaces/Justnothing
 git add .
 git config --global user.name "Mona Lisa"

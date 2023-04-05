@@ -27,17 +27,25 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: GetTo
-        run: pwd && pwwd=$(pwd) && export pwwd && cd .. && mkdir try 
+        run: sudo mkdir /try && chmod a=rwx /try
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          ls
-          cd $pwwd
-          pwd
-          ls
-          cd ../try
-          ls
-          pwd
-          apt update
-          
+          sudo cd /try
+          sudo apt update
+          sudo apt install -y patchelf g++ cmake libssl-dev libgmp3-dev libntl-dev
+          git clone https://github.com/homenc/HElib
+          cd HElib
+          mkdir /home/runner/work/Justnothing/Justnothing/build
+          ln -s /home/runner/work/Justnothing/Justnothing/build build
+          mkdir /home/runner/work/Justnothing/Justnothing/dist
+          ln -s /home/runner/work/Justnothing/Justnothing/dist dist
+          cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/Justnothing/Justnothing/dist ..
+          make -j32
+          git init
+          git add .
+          git config --global user.name "Mona Lisa"
+          git config --global user.email "MonaLisaCompiled@compile.ru"
+          git commit -m "Added compiled version"
+          git push

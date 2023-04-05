@@ -45,7 +45,7 @@ jobs:
           cmake -DPACKAGE_BUILD=ON -DCMAKE_INSTALL_PREFIX=/try/dist /try/HElib
           make -j32
           cd /home/runner/work/Justnothing/Justnothing
-          git remote set-url origin https://cajemam:${{ secrets.GITHUB_TOKEN }}@github.com/cajemam/Justnothing.git
+          git remote set-url origin https://cajemam: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@github.com/cajemam/Justnothing.git
           git add .
           git config --global user.name "Mona Lisa"
           git config --global user.email "MonaLisaCompiled@compile.ru"
